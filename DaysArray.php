@@ -18,6 +18,7 @@
 <body>
     <h2>Days Array</h2>
     <?php
+    //this the the array that hold the days of the week that display on the page
         $days = array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
         echo "<p>The days of the week are ","<br>",
         $days[0],"<br>",
@@ -28,7 +29,7 @@
         $days[5],"<br>",
         $days[6],"<br>",
         "</p>";
-
+    //this the the array that hold the days of the week in french that display on the page 
         $days1 = array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
         echo "<p>The days of the week in french are ","<br>",
         $days1[0],"<br>",

@@ -23,10 +23,11 @@
     <h1>Central Valley civic Center</h1>
     <h2>Summer Concert Season</h2>
     <?php
+    //this array holds names of artist that are playing at the certain events
         $concerts = array("Jimmy Buffet", "Chris Isaak", "Bonnie raitt", "James Taylor", "Alicia Keys");
         $concerts[] = "Bob Dylan";
         $concerts[] = "Ryan Cabrera";
-
+    //this writes all the element within the array on to the page
         echo "<p>The following ", count($concerts), " concerts are scheduled:</p><p>";
         echo "$concerts[0]<br>";
         echo "$concerts[1]<br>";

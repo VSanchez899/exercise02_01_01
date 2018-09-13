@@ -61,7 +61,7 @@
         $curStudentID = $studentID++;
         echo "The third student ID is : ", $curStudentID, "<br>";
 
-
+//assignment operators
         echo "<h1>Assignment Operators</h1>";
         $number = 100;
         $number += 50;
