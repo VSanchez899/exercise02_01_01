@@ -16,10 +16,13 @@
     <script src="moderizer.custom.658997.js"></script>
 </head>
 <body>
-    <h2>Dice Roll</h2>
+    <h2>Dice Roll 2</h2>
     <?php
         $faceNameSingular = array("one", "two", "three", "four", "five", "six");
         $faceNamePlural = array("ones", "twos", "threes", "fours", "fives", "sixes");
+        $doubleCount = 0;
+        $rollNumber = 1;
+        define("NBR_ROLLS", 4);
     //this grabs the arrays and shows of there is a 
         function checkForDoubles($die1, $die2){
             global $faceNameSingular;
@@ -67,12 +70,12 @@
                 echo "You rolled a yo!<br>";
             }
             else{
-                echo "Your roll had no nickname";
+                echo "Your roll had no nickname<br>";
             }
           }
         }
-
         $dice = array();
+        while ($rollNumber <= NBR_ROLLS ) {
         $dice[0] = rand(1,6);
         $dice[1] = rand(1,6);
         echo "<p>";
@@ -81,9 +84,12 @@
         $doubles = checkForDoubles($dice[0], $dice[1]);
         displayScoreText($score, $doubles);
         echo "</p>";
-            
-        
-        
+        if ($doubles) {
+            ++$doubleCount;
+        }
+            ++$rollNumber;
+        }
+        echo "<p>Doubles occured on $doubleCount of the " . NBR_ROLLS . " Rolls</p>";
 
     ?>
 </body>
