@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--
+        Exercise 02_02_01
+
+        Author: Vincent Sanchez
+        Date: 9.19.18
+
+        CoastCityComputer.php
+
+     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coast City Computers</title>
@@ -16,6 +25,7 @@
     <li>Hawking Technology Hi-Speed Wireless-AC Cardbus card: <strong>$9.99</strong></li>
 </ul>
 <?php
+//imports seperate files to bring in segements of code and add them to the DOM
     include("inc_header.php");
     include("inc_footer.php");
 ?>

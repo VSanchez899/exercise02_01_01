@@ -25,7 +25,7 @@
         $interestRate5 = .0825;
         $interestRate6 = .0850;
         $interestRate7 = .0875;
-
+//limit the out put to only four decimals
         $ratesArray = array($interestRate1, $interestRate2, $interestRate3, $interestRate4, $interestRate5, $interestRate6, $interestRate7);
         echo number_format($ratesArray[0], 4),"<br>";
         echo number_format($ratesArray[1], 4),"<br>";

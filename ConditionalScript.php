@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <!--
-        Exercise 02_01_01
+        Exercise 02_02_01
 
         Author: Vincent Sanchez
-        Date: 9.10.18
+        Date: 9.19.18
 
         ConditionalScript.php
 
@@ -19,6 +19,7 @@
 <body>
 <h2>ConditionalScript</h2>
     <?php
+    // if the integer match the condition it will output a different string
         $intVarible = 75;
         $result = "";
         if ($intVarible > 100) {
